@@ -1,0 +1,51 @@
+{
+	"Caption": "Main",
+	"Controls": [
+		{
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable",
+			"Sections": [
+				{
+					"Buttons": [
+						{
+							"OnPress": "/gapscanNEW/Actions/Products/NavToProducts_List.action",
+							"Alignment": "Center",
+							"Title": "Products"
+						}
+					],
+					"_Name": "SectionButtonTable0",
+					"_Type": "Section.Type.ButtonTable"
+				}
+			]
+		}
+	],
+	"_Name": "Main",
+	"_Type": "Page",
+	"ToolBar": {
+		"Items": [
+			{
+				"_Name": "LogoutToolbarItem",
+				"_Type": "Control.Type.ToolbarItem",
+				"Caption": "Logout",
+				"OnPress": "/gapscanNEW/Actions/Logout.action"
+			},
+			{
+				"_Name": "UploadToolbarItem",
+				"_Type": "Control.Type.ToolbarItem",
+				"Caption": "Sync",
+				"OnPress": "/gapscanNEW/Actions/Service/SyncStartedMessage.action",
+				"Visible": "$(PLT,true,true,false)"
+			},
+			{
+				"_Name": "UpdateToolbarItem",
+				"_Type": "Control.Type.ToolbarItem",
+				"Caption": "Update",
+				"Enabled": true,
+				"Clickable": true,
+				"OnPress": "/gapscanNEW/Actions/AppUpdateProgressBanner.action",
+				"Visible": "$(PLT,true,true,false)"
+			}
+		]
+	},
+	"PrefersLargeCaption": true
+}

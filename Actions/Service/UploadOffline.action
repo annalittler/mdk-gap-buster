@@ -1,0 +1,9 @@
+{
+    "Service": "/gapscanNEW/Services/SampleServiceV2.service",
+    "_Type": "Action.Type.OfflineOData.Upload",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnSuccess": "/gapscanNEW/Actions/Service/DownloadStartedMessage.action",
+    "OnFailure": "/gapscanNEW/Actions/Service/SyncFailureMessage.action"
+}

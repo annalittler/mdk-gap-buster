@@ -1,0 +1,13 @@
+{
+    "Service": "/gapscanNEW/Services/SampleServiceV2.service",
+    "DefiningRequests": [{
+        "Name": "Products",
+        "Query": "Products"
+    }],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/gapscanNEW/Actions/Service/SyncFailureMessage.action",
+    "OnSuccess": "/gapscanNEW/Rules/ErrorArchive/ErrorArchive_CheckForSyncError.js"
+}

@@ -1,0 +1,8 @@
+{
+    "_Type": "Action.Type.ApplicationUpdate",
+    "ActionResult": {
+        "_Name": "AppUpdate"
+    },
+    "OnFailure": "/gapscanNEW/Rules/AppUpdateFailure.js",
+    "OnSuccess": "/gapscanNEW/Rules/AppUpdateSuccess.js"
+}
